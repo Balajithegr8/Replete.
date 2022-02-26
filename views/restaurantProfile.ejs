@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Designed and Developed by Team Cliché Cookies-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>Replete | Profile</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/restaurantProfile.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class ="logo" href="#">Replete.</a>
+            <nav>
+                <ul class="primary-nav">
+                    <div class="primary-nav2">
+                        <li class="current"><a href="#" id="Home" onclick="gotoHome()">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#" id="Donations" onclick="gotoDonations()">Donations</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="contain">
+            <h1 class="subhead">Profile</h1>
+            <form action="">
+                <label for="name">Restaurant Name</label>
+                <input type="text" id="name" name="name" placeholder="Restaurant Name">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Restaurant Email">
+
+                <label for="phone">Phone No.</label>
+                <input type="text" id="phone" name="phone" placeholder="Restaurant Phone">
+
+                <label for="RAdd">Restaurant Address</label>
+                <textarea name="address" id="address" cols="30" rows="2"></textarea>
+
+                <label for="fssai">FSSAI Certificate</label>
+                <input type="certificate" id="certificate" name="ceritficate" placeholder="certificate">
+
+               </form>
+               <div>
+                    <a href="#" class="update"> Update</a>
+               </div>
+        </div>
+    </section>
+</body> 
+
+<script>
+    function gotoHome() {
+        fetch("/restaurantSide", {
+            "method" : "GET"
+        }).success(location.href = "/restaurantSide")
+    }
+    function gotoDonations() {
+        fetch("/restaurantDonation", {
+            "method" : "GET"
+        }).success(location.href = "/restaurantDonation")
+    }
+</script>
+</html>

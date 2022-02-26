@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Designed and Developed by Team Cliché Cookies-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>Replete | Register</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/registration.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section id="registration">
+        <div class="reg-verify">
+            <img src="../assets/Replete..svg" class="reg-verify-logo">
+            <div class="reg-verify-details">
+                <div class="reg-verify-details-title">Organisation verification</div>
+                <input id="reg-verify-details-name" step="any" type="text" name="Organisation Name" placeholder="Organisation Name">
+                <input id="reg-verify-details-cred" step="any" type="url" name="Credential" placeholder="Credential">
+                <div class="reg-verify-details-buttons">
+                    <button id="reg-verify-details-submit" onclick="submitVerify()">Verify</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="reg-register">
+            <div class="reg-register-title">Register</div>
+            <div class="reg-register-please">Please enter the following details</div>
+            <input id="reg-register-email" step="any" type="text" name="Email" placeholder="Email">
+            <input id="reg-register-password" step="any" type="text" name="Password" placeholder="Password">
+            <input id="reg-register-confirmpassword" step="any" type="text" name="Confirm Password" placeholder="Confirm Password">
+            <div class="reg-register-buttons">
+                <button class="reg-register-submit" onclick="gotoOrganisation()">Register</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    function submitVerify(){
+        document.getElementById("reg-verify-details-submit").style.backgroundColor = "#4d9939"
+        document.getElementById("reg-verify-details-submit").style.borderColor = "#4d9939"
+    }
+    function gotoOrganisation() {
+        fetch("/organisation", {
+            "method" : "GET"
+        }).success(location.href = "/organisation")
+    }
+</script>
+
+</html>

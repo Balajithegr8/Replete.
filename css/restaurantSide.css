@@ -1,0 +1,161 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #E0FBFC;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.navbar{
+    background: #293241;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    color: #E0FBFC;
+    font-size: 3em;
+}
+nav{
+    display: block;
+}
+nav ul li{
+    float: left;
+}
+li a{
+    text-decoration: none;
+    color: #E0FBFC;
+    padding: 4em;
+}
+li a:hover{
+    color:#E2684C;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+.primary-nav{
+    list-style-type: none;
+    float: left;
+}
+.container{
+    display: flex;
+    place-content: space-between;
+    text-align: center;
+}
+.topnav-container{
+    text-align: center;
+}
+.topnav{
+    text-align: left;
+    background: #98C1D9;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 0px solid;
+    padding: 30px 50px;
+    outline: none;
+    color: #293241;
+
+    width: 600px;
+    height: 40px;
+
+}
+.mobile-menu{
+    cursor: pointer;
+}
+section{
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: right;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subhead{
+    text-align: center;
+    font-weight: 300;
+    color: #293241;
+    font-size: 2.4em;
+}
+
+.primary-button{
+    text-align: center;
+    padding: 3em 5em;
+}
+#primary-cta {
+    background: #E2684C;
+    border: 2px solid #E2684C;
+    text-align: center;
+    color: #E0FBFC;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .7em 3em;
+    font-size: 1em;
+    border-radius: 5em;
+    display: inline-block;
+    transition: 0.3s;
+}
+#primary-cta:hover {
+    background: #E0FBFC;
+    color: #E2684C;
+}
+.send-button {
+    background: #E2684C;
+    border: 2px solid #E2684C;
+    text-align: center;
+    color: #E0FBFC;
+    text-decoration: none;
+    padding: .3em 2em;
+    font-size: 1em;
+    border-radius: 5em;
+    display: inline-block;
+    margin: 1em;
+    transition: 0.3s;
+}
+.send-button:hover {
+    background: #E0FBFC;
+    color: #E2684C;
+}
+
+.container-contact{
+    background: #98C1D9;
+    border-radius: 2em;
+    text-align: center;
+    height: 650px;
+}
+.contact-section{
+    display: block;
+}
+h2{
+    padding-top: 40px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+label{
+    display: block;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+input, textarea{
+    width: 25%;
+    padding: .8em;
+    border: 0px;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+a:link {
+    color: #E0FBFC;
+}
+
+

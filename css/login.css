@@ -1,0 +1,135 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background: #293241;
+  width: fit-content;
+}
+
+#login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 500px;
+}
+
+.logo-desc-tagline {
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 30px;
+  color: white;
+}
+
+.description {
+  font-weight: 200;
+  color: white;
+  width: 400px;
+  padding-top: 10px;
+}
+
+.contact-title {
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 200px;
+  color: #E0FBFC;
+}
+
+.contact-number {
+  color: #E0FBFC;
+}
+
+.login-details {
+  padding: 60px;
+  height: 350px;
+  border-radius: 40px;
+  background: #E0FBFC;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-details-title {
+  font-size: 40px;
+}
+
+.login-details-welcome {
+  font-weight: 300;
+}
+
+#login-details-email {
+  background-color: #293241;
+  border: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #E0FBFC;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-top: 40px;
+  caret-color: #E0FBFC;
+  width: 300px;
+  outline: none;
+}
+
+#login-details-password {
+  background-color: #293241;
+  border: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #E0FBFC;
+  border-radius: 10px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  caret-color: #E0FBFC;
+  width: 300px;
+  outline: none;
+}
+
+.login-details-buttons {
+  margin-top: 50px;
+}
+
+.login-details-submit {
+  background-color: #3D5A80;
+  border: 2px solid #3D5A80;
+  color: #E0FBFC;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.login-details-submit:hover {
+  background-color: #E0FBFC;
+  color: #3D5A80;
+  cursor: pointer;
+}
+
+.login-details-register {
+  background-color: #E0FBFC;
+  border: 2px solid #E0FBFC;
+  color: #3D5A80;
+  margin-left: 30px;
+  font-weight: 300;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.login-details-register:hover {
+  cursor: pointer;
+}
